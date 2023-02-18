@@ -38,29 +38,29 @@ function Login() {
             <Link to='/'>
                 <img
                     className="login__logo"
-                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png' 
+                    src='a - Logo 01.png' 
                 />
             </Link>
 
             <div className='login__container'>
-                <h1>Sign-in</h1>
+                <h1>Iniciar Sesión</h1>
 
                 <form>
-                    <h5>E-mail</h5>
+                    <h5>Correo</h5>
                     <input type='text' value={email} onChange={e => setEmail(e.target.value)} />
 
-                    <h5>Password</h5>
+                    <h5>Contraseña</h5>
                     <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
 
-                    <button type='submit' onClick={signIn} className='login__signInButton'>Sign In</button>
+                    <button type='submit' onClick={signIn} className='login__signInButton'>Iniciar Sesión</button>
                 </form>
 
                 <p>
-                    By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
-                    see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
+                Al iniciar sesión, acepta las Condiciones de uso de K-MAN. Por favor
+                    consulte nuestro Aviso de Privacidad, nuestro Aviso de Cookies y nuestro Aviso de Anuncios Basados ​​en Intereses.
                 </p>
 
-                <button onClick={register} className='login__registerButton'>Create your Amazon Account</button>
+                <button onClick={register} className='login__registerButton'>Crear cuenta</button>
             </div>
         </div>
     )

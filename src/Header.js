@@ -20,7 +20,7 @@ function Header() {
       <Link to="/">
         <img
           className="header__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="a - Logo 01.png"
         />
       </Link>
 
@@ -32,22 +32,22 @@ function Header() {
       <div className="header__nav">
         <Link to={!user && '/login'}>
           <div onClick={handleAuthenticaton} className="header__option">
-            <span className="header__optionLineOne">Hello {!user ? 'Guest' : user.email}</span>
-            <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
+            <span className="header__optionLineOne">Hola {!user ? 'Guest' : user.email}</span>
+            <span className="header__optionLineTwo">{user ? 'Cerrar Sesión' : 'Iniciar Sesión'}</span>
           </div>
         </Link>
 
         <Link to='/orders'>
           <div className="header__option">
-            <span className="header__optionLineOne">Returns</span>
-            <span className="header__optionLineTwo">& Orders</span>
+            <span className="header__optionLineOne">Historial</span>
+            <span className="header__optionLineTwo">& Ordenes</span>
           </div>
         </Link>
         
 
         <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
-          <span className="header__optionLineTwo">Prime</span>
+          <span className="header__optionLineOne"></span>
+          <span className="header__optionLineTwo"></span>
         </div>
 
         <Link to="/checkout">
